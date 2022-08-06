@@ -4,10 +4,13 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [compojure "1.6.1"]
+                 [org.clojure/core.match "1.0.0"]
                  [org.opencypher.gremlin/translation "1.0.4"]
                  [ring/ring-defaults "0.3.2"]]
-  :plugins [[lein-ring "0.12.5"]]
+  :plugins [[lein-ring "0.12.5"] [lein-typed "0.4.6"]]
   :ring {:handler hello-world.handler/app}
   :profiles
-  {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
+  {:dev {:dependencies [[org.clojure.typed/checker.jvm "1.0.1"]
+                        [org.clojure.typed/annotator.jvm "1.0.1"]
+                        [javax.servlet/servlet-api "2.5"]
                         [ring/ring-mock "0.3.2"]]}})
