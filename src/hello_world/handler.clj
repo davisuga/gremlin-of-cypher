@@ -1,12 +1,12 @@
 (ns hello-world.handler
   (:import (org.opencypher.gremlin.translation TranslationFacade CypherAst))
   (:import (org.opencypher.gremlin.translation.translator TranslatorFlavor Translator))
-
   (:require [compojure.core :refer :all]
             [compojure.route :as route]
-
+            [ring.adapter.jetty :refer [run-jetty]]
             [clojure.core.match :refer [match]]
-            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]))
+            [ring.middleware.defaults :refer [wrap-defaults site-defaults]])
+  (:gen-class))
 
 (defn translate-tinker [query]
   (-> (new  TranslationFacade)
@@ -43,3 +43,6 @@
 
 (def app
   (wrap-defaults app-routes site-defaults))
+
+(defn -main [& args]
+  (run-jetty app {:port (Integer/valueOf (or (System/getenv "PORT") "3000"))}))
