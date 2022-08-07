@@ -1,0 +1,1 @@
+["^ ","~$check-tc-ignore",["^ ","~:row",17,"~:col",1,"~:fixed-arities",["~#set",[3]],"~:name","^0","~:ns","~$clojure.core.typed.checker.check.special.tc-ignore","~:top-ns","^7"],"~:filename","/home/davi/.m2/repository/org/clojure/typed/checker.jvm/1.0.1/checker.jvm-1.0.1.jar:clojure/core/typed/checker/check/special/tc_ignore.clj"]

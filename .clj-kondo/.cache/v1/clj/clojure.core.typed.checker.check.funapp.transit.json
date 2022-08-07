@@ -1,0 +1,1 @@
+["^ ","~$nth-type",["^ ","~:row",38,"~:col",1,"~:private",true,"~:name","^0","~:ns","~$clojure.core.typed.checker.check.funapp","~:top-ns","^6"],"~$check-funapp",["^ ","^1",42,"^2",1,"~:varargs-min-arity",5,"^4","^8","^5","^6","^7","^6"],"~:filename","/home/davi/.m2/repository/org/clojure/typed/checker.jvm/1.0.1/checker.jvm-1.0.1.jar:clojure/core/typed/checker/check/funapp.clj"]

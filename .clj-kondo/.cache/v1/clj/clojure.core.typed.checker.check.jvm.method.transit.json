@@ -1,0 +1,1 @@
+["^ ","~$check-invoke-method",["^ ","~:row",24,"~:col",1,"~:varargs-min-arity",2,"~:name","^0","~:ns","~$clojure.core.typed.checker.check.jvm.method","~:top-ns","^6"],"~:filename","/home/davi/.m2/repository/org/clojure/typed/checker.jvm/1.0.1/checker.jvm-1.0.1.jar:clojure/core/typed/checker/check/jvm/method.clj"]

@@ -1,0 +1,1 @@
+["^ ","~$check",["^ ","~:row",18,"~:col",1,"~:fixed-arities",["~#set",[1,2]],"~:name","^0","~:ns","~$clojure.core.typed.checker.runtime-check","~:top-ns","^7"],"~$runtime-check-expr",["^ ","^1",53,"^2",1,"^5","^9","^6","^7","^8","^7"],"~:filename","/home/davi/.m2/repository/org/clojure/typed/checker.jvm/1.0.1/checker.jvm-1.0.1.jar:clojure/core/typed/checker/runtime_check.clj"]

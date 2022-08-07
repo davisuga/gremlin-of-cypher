@@ -1,6 +1,4 @@
-# hello-world
-
-FIXME
+# Gremlin to Cypher API
 
 ## Prerequisites
 
@@ -13,7 +11,3 @@ You will need [Leiningen][] 2.0.0 or above installed.
 To start a web server for the application, run:
 
     lein ring server
-
-## License
-
-Copyright © 2022 FIXME
