@@ -1,4 +1,4 @@
-# fly.toml file generated for gremlim-of-cypher on 2022-08-06T14:02:52-03:00
+# fly.toml file generated for gremlin-to-cypher-be on 2022-08-08T09:08:40-03:00
 
 app = "gremlim-of-cypher"
 kill_signal = "SIGINT"

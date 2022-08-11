@@ -5,6 +5,7 @@
             [compojure.route :as route]
             [ring.adapter.jetty :refer [run-jetty]]
             [clojure.core.match :refer [match]]
+            [ring.middleware.cors :refer [wrap-cors]]
             [ring.middleware.defaults :refer [wrap-defaults site-defaults]])
   (:gen-class))
 
@@ -42,7 +43,8 @@
   (route/not-found "Not Found"))
 
 (def app
-  (wrap-defaults app-routes site-defaults))
+  (wrap-defaults (wrap-cors app-routes :access-control-allow-origin [#"http://localhost:5173" #"https://gremlin-to-cypher-fe.vercel.app"]
+                            :access-control-allow-methods [:get :put :post :delete]) site-defaults))
 
 (defn -main [& args]
   (run-jetty app {:port (Integer/valueOf (or (System/getenv "PORT") "3000"))}))
