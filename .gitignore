@@ -9,3 +9,6 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 **.java
+/.clj-kondo
+/.lsp
+/.calva
